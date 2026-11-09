@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url"
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent"
 
 export const PERSONA_ENTRY = "pi-session-personas-gs.persona"
-export const PERSONA_COMMAND = "gentle:sesion-persona"
+export const PERSONA_COMMAND = "gentle:session-persona"
 export const CLEAR_ALIASES = ["none", "neutral", "ninguna"] as const
 export const TEMPLATE_PATH = join(
 	dirname(fileURLToPath(import.meta.url)),

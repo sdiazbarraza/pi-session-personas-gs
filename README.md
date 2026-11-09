@@ -13,10 +13,10 @@ persona's display name becomes the session display name.
 ## Command
 
 ```
-/gentle:sesion-persona            # selector with every discovered persona, plus None
-/gentle:sesion-persona ada        # by file stem
-/gentle:sesion-persona "Ada Lovelace"   # by frontmatter name
-/gentle:sesion-persona none       # back to the neutral persona
+/gentle:session-persona            # selector with every discovered persona, plus None
+/gentle:session-persona ada        # by file stem
+/gentle:session-persona "Ada Lovelace"   # by frontmatter name
+/gentle:session-persona none       # back to the neutral persona
 ```
 
 Switching applies from the next turn. Selecting a persona also renames the session to the persona
@@ -101,7 +101,7 @@ Then restart Gentle Shell, or run `/reload`, so the extension is loaded.
 
 ## First run
 
-1. Confirm the command is registered: `/gentle:sesion-persona` offers a selector (empty until a
+1. Confirm the command is registered: `/gentle:session-persona` offers a selector (empty until a
    persona file exists, and it names the expected directory).
 2. Create a persona from the template:
 
@@ -110,7 +110,7 @@ Then restart Gentle Shell, or run `/reload`, so the extension is loaded.
    cp /path/to/pi-session-personas-gs/assets/persona-template.md .pi/personas/ada.md
    ```
 
-3. Select it: `/gentle:sesion-persona ada`. The session is renamed to `Ada` and the persona applies
+3. Select it: `/gentle:session-persona ada`. The session is renamed to `Ada` and the persona applies
    from the next turn.
 
 For personas shared by every project, put the file in `~/.gentle-shell/agent/personas/` instead.
