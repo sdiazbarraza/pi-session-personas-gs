@@ -1,0 +1,40 @@
+{
+  "name": "pi-session-personas-gs",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/session-persona.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "test": "node --test \"tests/*.test.ts\""
+  },
+  "description": "Gentle Shell package that switches a session's persona at runtime from your own structured markdown files, appending it to the untouched neutral prompt and naming the session after it.",
+  "author": "Sebastian Diaz (https://github.com/sdiazbarraza)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdiazbarraza/pi-session-personas-gs.git"
+  },
+  "homepage": "https://github.com/sdiazbarraza/pi-session-personas-gs#readme",
+  "bugs": {
+    "url": "https://github.com/sdiazbarraza/pi-session-personas-gs/issues"
+  },
+  "files": [
+    "extensions/",
+    "assets/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}
